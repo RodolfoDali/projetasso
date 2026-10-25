@@ -8,49 +8,52 @@
 \contentsline {section}{\numberline {1.6}Euclid's Division Algorithm}{9}{section*.30}%
 \contentsline {section}{\numberline {1.7}Bézouts' Theorem}{9}{section*.32}%
 \contentsline {section}{\numberline {1.8}Chicken Mc Nuggets}{9}{section*.34}%
-\contentsline {section}{\numberline {1.9}Base Systems}{9}{section*.36}%
-\contentsline {section}{\numberline {1.10}Four Number Lemma}{9}{section*.39}%
-\contentsline {chapter}{\numberline {2}Basic Modular Arithmetic}{11}{chapter*.41}%
-\contentsline {section}{\numberline {2.1}Properties}{11}{section*.42}%
-\contentsline {section}{\numberline {2.2}Fermat's Little Theorem}{11}{section*.43}%
-\contentsline {section}{\numberline {2.3}Residue classes}{11}{section*.46}%
-\contentsline {section}{\numberline {2.4}Equal Sets}{11}{section*.50}%
-\contentsline {section}{\numberline {2.5}Fermat's Little theorem}{12}{section*.52}%
-\contentsline {section}{\numberline {2.6}Inverses}{12}{section*.54}%
-\contentsline {section}{\numberline {2.7}Wilson's Theorem}{12}{section*.56}%
-\contentsline {section}{\numberline {2.8}Euler's Theorem}{12}{section*.58}%
-\contentsline {chapter}{\numberline {3}Arithmetic Funtions}{13}{chapter*.63}%
-\contentsline {section}{\numberline {3.1}Number of Divisors}{13}{section*.67}%
-\contentsline {section}{\numberline {3.2}Sum of Divisors}{14}{section*.72}%
-\contentsline {section}{\numberline {3.3}Euler's Totient Function}{14}{section*.75}%
-\contentsline {section}{\numberline {3.4}Multiplicative Functions}{14}{section*.79}%
-\contentsline {subsection}{\numberline {3.4.1}Dirichlet Convolution}{15}{subsection*.85}%
-\contentsline {subsection}{\numberline {3.4.2}Möbius Inversion}{15}{subsection*.93}%
-\contentsline {section}{\numberline {3.5}Floor and Ceiling Functions}{15}{section*.95}%
-\contentsline {chapter}{\numberline {4}Binomial Coefficients}{17}{chapter*.96}%
-\contentsline {section}{\numberline {4.1}Lucas's Theorem}{17}{section*.99}%
-\contentsline {chapter}{\numberline {5}Diophantine Equations}{19}{chapter*.101}%
-\contentsline {section}{\numberline {5.1}Pythagorean triples}{19}{section*.102}%
-\contentsline {section}{\numberline {5.2}Fermat's Descent}{19}{section*.103}%
-\contentsline {section}{\numberline {5.3}Pell's equation}{19}{section*.104}%
-\contentsline {section}{\numberline {5.4}Vieta's Jump}{19}{section*.105}%
-\contentsline {chapter}{\numberline {6}Polynomials}{21}{chapter*.106}%
-\contentsline {section}{\numberline {6.1}Euclidean Division Lemma}{21}{section*.107}%
-\contentsline {section}{\numberline {6.2}GCD}{21}{section*.108}%
-\contentsline {section}{\numberline {6.3}Vietas Theorem}{21}{section*.109}%
-\contentsline {section}{\numberline {6.4}Irreducibility}{21}{section*.110}%
-\contentsline {section}{\numberline {6.5}Schur's Theorem}{21}{section*.111}%
-\contentsline {section}{\numberline {6.6}Cyclotomic Polynomials}{21}{section*.112}%
-\contentsline {chapter}{\numberline {7}Advanced Modular Arithmetic}{23}{chapter*.113}%
-\contentsline {section}{\numberline {7.1}Order}{23}{section*.114}%
-\contentsline {section}{\numberline {7.2}Primitive Roots}{23}{section*.115}%
-\contentsline {section}{\numberline {7.3}Fermat's Chrismas Theorem}{23}{section*.116}%
-\contentsline {section}{\numberline {7.4}Thues' Lemma}{23}{section*.117}%
-\contentsline {section}{\numberline {7.5}Chinese Remainde Theorem}{23}{section*.118}%
-\contentsline {chapter}{\numberline {8}Prime Exponents}{25}{chapter*.119}%
-\contentsline {section}{\numberline {8.1}p-adic valuations}{25}{section*.120}%
-\contentsline {section}{\numberline {8.2}LTE}{25}{section*.121}%
-\contentsline {section}{\numberline {8.3}Zsigmondy's Theorem}{25}{section*.122}%
-\contentsline {chapter}{\numberline {9}Quadratic Residues}{27}{chapter*.123}%
-\contentsline {section}{\numberline {9.1}Quadratic Reciprocity}{27}{section*.124}%
-\contentsline {chapter}{\numberline {10}Nukes}{29}{chapter*.125}%
+\contentsline {section}{\numberline {1.9}Base Systems}{9}{section*.40}%
+\contentsline {section}{\numberline {1.10}Four Number Lemma}{9}{section*.43}%
+\contentsline {chapter}{\numberline {2}Basic Modular Arithmetic}{11}{chapter*.45}%
+\contentsline {section}{\numberline {2.1}Properties}{11}{section*.46}%
+\contentsline {section}{\numberline {2.2}Fermat's Little Theorem}{11}{section*.47}%
+\contentsline {section}{\numberline {2.3}Residue classes}{11}{section*.50}%
+\contentsline {section}{\numberline {2.4}Equal Sets}{11}{section*.54}%
+\contentsline {section}{\numberline {2.5}Fermat's Little theorem}{12}{section*.56}%
+\contentsline {section}{\numberline {2.6}Inverses}{12}{section*.58}%
+\contentsline {section}{\numberline {2.7}Wilson's Theorem}{12}{section*.60}%
+\contentsline {section}{\numberline {2.8}Euler's Theorem}{12}{section*.62}%
+\contentsline {section}{\numberline {2.9}Euler's Theorem}{12}{section*.67}%
+\contentsline {chapter}{\numberline {3}Arithmetic Funtions}{13}{chapter*.68}%
+\contentsline {section}{\numberline {3.1}Number of Divisors}{13}{section*.72}%
+\contentsline {section}{\numberline {3.2}Sum of Divisors}{14}{section*.77}%
+\contentsline {section}{\numberline {3.3}Euler's Totient Function}{14}{section*.80}%
+\contentsline {section}{\numberline {3.4}Multiplicative Functions}{14}{section*.84}%
+\contentsline {subsection}{\numberline {3.4.1}Dirichlet Convolution}{15}{subsection*.90}%
+\contentsline {subsection}{\numberline {3.4.2}Möbius Inversion}{15}{subsection*.98}%
+\contentsline {section}{\numberline {3.5}Floor and Ceiling Functions}{15}{section*.100}%
+\contentsline {chapter}{\numberline {4}Binomial Coefficients}{17}{chapter*.101}%
+\contentsline {section}{\numberline {4.1}Lucas's Theorem}{17}{section*.104}%
+\contentsline {chapter}{\numberline {5}Diophantine Equations}{19}{chapter*.106}%
+\contentsline {section}{\numberline {5.1}Pythagorean triples}{19}{section*.107}%
+\contentsline {section}{\numberline {5.2}Fermat's Descent}{19}{section*.108}%
+\contentsline {section}{\numberline {5.3}Pell's equation}{19}{section*.109}%
+\contentsline {section}{\numberline {5.4}Vieta's Jump}{19}{section*.110}%
+\contentsline {chapter}{\numberline {6}Polynomials}{21}{chapter*.111}%
+\contentsline {section}{\numberline {6.1}Euclidean Division Lemma}{21}{section*.112}%
+\contentsline {section}{\numberline {6.2}GCD}{21}{section*.113}%
+\contentsline {section}{\numberline {6.3}Vietas Theorem}{21}{section*.114}%
+\contentsline {section}{\numberline {6.4}Irreducibility}{21}{section*.115}%
+\contentsline {section}{\numberline {6.5}Schur's Theorem}{21}{section*.116}%
+\contentsline {section}{\numberline {6.6}Cyclotomic Polynomials}{21}{section*.117}%
+\contentsline {chapter}{\numberline {7}Advanced Modular Arithmetic}{23}{chapter*.118}%
+\contentsline {section}{\numberline {7.1}Order}{23}{section*.119}%
+\contentsline {section}{\numberline {7.2}Primitive Roots}{23}{section*.120}%
+\contentsline {section}{\numberline {7.3}Fermat's Chrismas Theorem}{23}{section*.121}%
+\contentsline {section}{\numberline {7.4}Thues' Lemma}{23}{section*.122}%
+\contentsline {section}{\numberline {7.5}Chinese Remainde Theorem}{23}{section*.123}%
+\contentsline {chapter}{\numberline {8}Prime Exponents}{25}{chapter*.124}%
+\contentsline {section}{\numberline {8.1}p-adic valuations}{25}{section*.125}%
+\contentsline {section}{\numberline {8.2}LTE}{25}{section*.126}%
+\contentsline {section}{\numberline {8.3}Zsigmondy's Theorem}{25}{section*.127}%
+\contentsline {chapter}{\numberline {9}Quadratic Residues}{27}{chapter*.128}%
+\contentsline {section}{\numberline {9.1}Quadratic Reciprocity}{27}{section*.129}%
+\contentsline {chapter}{\numberline {10}Nukes}{29}{chapter*.130}%
+\contentsline {part}{II\hspace {1em}Combinatorics}{31}{part*.131}%
+\contentsline {chapter}{\numberline {11}Logic Propositions}{33}{chapter*.132}%
