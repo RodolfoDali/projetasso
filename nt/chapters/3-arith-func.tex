@@ -1,8 +1,156 @@
 \chapter{Arithmetic Funtions}
+
+\begin{definition}
+    An \textbf{arithmetic function}, is a function $f: \mathbb{N} \rightarrow \mathbb{C}$
+\end{definition}
+
+\begin{definition}
+    An arithmetic function is called \textbf{multiplicative} if
+
+    \[f(mn) = f(m)f(n) \ \text{for all coprime} \ m, n.\]
+It is called completely multiplicative if
+
+\[f(mn) = f(m)f(n) \ \text{for all} \ m, n.\]
+\end{definition}
+
+\begin{definition}
+    An arithmetic function is called \textbf{additive} if
+
+    \[f(mn) = f(m)+f(n) \ \text{for all coprime} \ m, n.\]
+It is called completely additive if
+
+\[f(mn) = f(m)+f(n) \ \text{for all} \ m, n.\]
+\end{definition}
+
 \section{Number of Divisors}
+
+\begin{definition}
+Let $n$ be a positive integer. Then the number of divisors of $n$ as a function
+is denoted by $d(n)$.    
+\end{definition}
+
+\begin{theorem}[Formula for $d(n)$] Let $n \in \mathbb{N}$ such that its prime factorization is
+
+    \[n = p_1^{\alpha_1}p_2^{\alpha_2} \dots p_k^{\alpha_k}\]
+
+Then
+
+    \[d(n) = (1 + \alpha_1)(1 + \alpha_2) \dots (1 + \alpha_k).\]
+    
+\end{theorem}
+
+\begin{theorem}
+    The function $d(n)$ is odd if and only if $n$ is a square.
+\end{theorem}
+
+\begin{theorem}
+    \[d(n) \leq 2 \sqrt n\]
+\end{theorem}
+
 \section{Sum of Divisors}
-\section{Arithmetic Funtions}
+
+\begin{definition}
+Let $n$ be a positive integer. Then the sum of divisors of $n$ as a function
+is denoted by $\sigma(n)$.    
+\end{definition}
+
+\begin{theorem}[Formula for $\sigma(n)$] Let $n \in \mathbb{N}$ such that its prime factorization is
+
+    \[n = p_1^{\alpha_1} p_2^{\alpha_2} \dots p_k^{\alpha_k}\]
+
+Then
+
+    \[\sigma(n) = (1 + p_1+\dots+ p_1^{\alpha_1}) \dots (1 + p_k+\dots+p_k ^{\alpha_k}).\]
+    
+\end{theorem}
+
+
+\section{Euler's Totient Function}
+
+\begin{definition}
+    Let $n$ be a positive integer. The function $\varphi(n)$ is called Euler's totient function, and it denotes the number of positive integers less than $n$ that are coprime to it.
+\end{definition}
+
+\begin{theorem}[Gauss] For any positive integer $n$,
+    \[\sum_{d\mid n} \varphi(d) = n\]
+\end{theorem}
+
+\begin{lemma}
+    For all composite $n$, we have
+    \[\varphi(n) \leq n-\sqrt{n}\].
+    Also, for all $n \neq 2, 6$, 
+    \[\varphi(n) \geq \sqrt{n}\]
+\end{lemma}
+
 \section{Multiplicative Functions}
-    \subsection{Möbius Inversion}
+
+\begin{theorem}
+    Let $f$ be a multiplicative function. Then 
+
+    \[F(n) = \sum_{d|n} f(d)\]
+
+    is also multiplicative.
+\end{theorem}
+
+\begin{lemma}
+    $\varphi$ is multiplicative.
+\end{lemma}
+
+\begin{definition}
+    The \textbf{Möbius function} $\mu(n)$ is defined as follows:   
+    \[
+        \mu(n) = 
+        \begin{cases}
+            1 & \text{if } n=1\\
+            0 & \text{if } p^2|n \text{ for some prime } p\\
+            (-1)^k & \text{if } n=p_1p_2\dots p_k \text{ for distinct primes } p_i
+        \end{cases}
+    \]
+\end{definition}    
+
+\begin{theorem}
+   $\mu(n)$ is multiplicative. Also, for any positive integer $n$,
+   \[\sum_{d|n} \mu(d) = \begin{cases} 1 & \text{if } n=1 \\ 0 & \text{if } n>1 \end{cases}\]
+\end{theorem}
+
+\begin{definition}
+    The dirichlet delta function $\delta(n)$ is defined as follows:
+    \[\delta(n) = \begin{cases} 1 & \text{if } n=1 \\ 0 & \text{if } n>1 \end{cases}\] 
+\end{definition}
+
     \subsection{Dirichlet Convolution}
+        \begin{definition}
+            Let $f$ and $g$ be two arithmetic functions (not necessarily multiplicative). Then the Dirichlet convolution of $f$ and $g$ is defined as
+
+            \[(f * g)(n) = \sum_{d|n} f(d)g\left(\frac{n}{d}\right)\]
+        \end{definition}
+
+        \begin{theorem}
+            The following properties hold for Dirichlet convolution:
+            \begin{enumerate}
+                \item $f * g = g * f$
+
+                \item $f * (g + h) = f * g + f * h$
+                
+                \item $(f * g) * h = f * (g * h)$
+                
+                \item $f * \delta = f$
+            \end{enumerate}
+        \end{theorem}
+
+
+        \begin{lemma}
+            \[\sigma(n)=\sum_{m\mid n}\varphi(m)\,d\left(\frac{n}{m}\right)\]
+        \end{lemma}
+
+    \subsection{Möbius Inversion}
+        \begin{theorem}[Möbius Inversion]
+            Let $f$ and $g$ be two arithmetic functions such that
+            \[g(n) = \sum_{d|n} f(d)\]
+            Then
+            \[f(n) = \sum_{d|n} g(d)\mu\left(\frac{n}{d}\right)\]
+
+            Equivalently, if $g = f * 1 \ \iff \ f = g * \mu$.
+        \end{theorem}
+    
 \section{Floor and Ceiling Functions}

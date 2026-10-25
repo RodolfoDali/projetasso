@@ -1,10 +1,31 @@
 \chapter{Basic Theory}
 \section{Divisibility}
+
+\begin{definition}
+    A number $n$ is divisible by $m$ if there exists some integer $r$ such that $mr=n$. Also, we say $m$
+divides $n$ and write this symbolically as
+\[
+m \mid n
+\] 
+\end{definition}
+
+\begin{theorem}
+    Let $x$, $y$, $z$ be integers.
+
+    \begin{itemize}
+        \item We have $x \mid x$.
+        \item We always have $1 \mid x$ and $x \mid 0$.
+        \item If $x \mid y$ and $y \mid z$, then $x \mid z$.
+    \end{itemize}
+\end{theorem}
+
+
 \begin{theorem}
 
 If $ x, y \in \mathbb{Z}$, and $x \mid y$ then $y=0$ or $\mid x \mid \leq \mid y \mid$
 
 \end{theorem}
+
 
 \begin{theorem}
 
@@ -12,23 +33,148 @@ Suppose $ c, x, y \in \mathbb{Z}$, and $c \mid x, y$ then $c \mid a x + b y$ for
  
 \end{theorem}
 
+\section{Euclid's Division Lemma}
+
+\begin{theorem}[Euclid's Division Lemma]
+    For any integers $b$, $a$, we can find \textbf{unique}
+integers $q$, $r$ such that
+
+\[b = aq + r, 0 \leq r < a.\]
+
+Namely, $q$ is called the \textbf{quotient} and $r$ the \textbf{remainder}.
+\end{theorem}
+
+
+\section{Primes}
+
 \begin{definition}
-    
+    A natural number is called a \textbf{prime} if it has only two positive divisors, $1$ and itself.
 \end{definition}
 
-\begin{theorem}
+\begin{theorem}[Euclid]
+    There are infinitely many primes.
+\end{theorem}
+
+\section{Fundamental Theorem of Arithmetic}
+
+\begin{theorem}[Fundamental Theorem of Arithmetic]
+    Any natural number greater than $1$ has a \textbf{unique} prime factorization upto order.Thus, any number $n$ can be written as 
+    \[n=p_1^{\alpha_1}p_2^{\alpha_2}\dots p_k^{\alpha_k}\]
+    Where $p_1, p_2, \dots, p_k$ are primes and $\alpha_1, \alpha_2,\dots, \alpha_k$ are non-negative integers. 
+\end{theorem}
+
+\begin{lemma}
+    $\sqrt{p}$ is irrational for any prime $p$.
+\end{lemma}
+
+\section{GCD and LCM}
+
+\begin{definition}
+    The GCD, or the \textbf{Greatest Common Divisor} of two numbers is the
+number obtained by the set of common prime factors. For two numbers $m$, $n$, it is denoted
+by $\gcd{m}{n}$, or often just $(m, n)$
+\end{definition}
+
+\begin{lemma}
+    Let $a$, $b$ be integers. The \textbf{GCD} of $a$, $b$ is the largest number which divides both $a$, $b$. In particular, $\gcd{a}{b} \leq a, b$.
+\end{lemma}
+
+\begin{lemma}
 
 Let $a,b,c$ be three integers. Then
-\[c\mid a, c\mid b,\Rightarrow  c \mid \gcd(a,b)
+
+\[c\mid a, c\mid b,\Rightarrow  c \mid \gcd(a,b)\]
+
+\end{lemma}
+
+\begin{theorem}[Prime Factorization of GCD]
+    Let $a$, $b$ be two integers with prime factorization:
+    \[a=p_1^{\alpha_1}p_2^{\alpha_2}\dots p_k^{\alpha_k}\]
+    \[b=p_1^{\beta_1}p_2^{\beta_2}\dots p_k^{\beta_k}\]
+    where $\alpha_i$, $\beta_i$ are non-negative integers. then
+    
+    \[\gcd{a}{b}=p_1^{\min{\alpha_1}{\beta_1}}p_2^{\min{\alpha_2}{\beta_2}}\dots p_k^{\min{\alpha_k}{\beta_k}}\]
+\end{theorem}
+
+\begin{definition}
+    The LCM, or the \textbf{Least Common Multiple} of two numbers is the \textbf{least} natural divisible by \textbf{both} a,b. It is denoted
+by $\lcm{a}{b}$, and in particular $a$, $b$ $\leq \lcm{a}{b}$.
+\end{definition}
+
+\begin{definition}[LCM]
+    Let $a$, $b$ be two integers with prime factorization:
+    \[a=p_1^{\alpha_1}p_2^{\alpha_2}\dots p_k^{\alpha_k}\]
+    \[b=p_1^{\beta_1}p_2^{\beta_2}\dots p_k^{\beta_k}\]
+    where $\alpha_i$, $\beta_i$ are non-negative integers. then
+    
+    \[\lcm{a}{b}=p_1^{\max{\alpha_1}{\beta_1}}p_2^{\max{\alpha_2}{\beta_2}}\dots p_k^{\max{\alpha_k}{\beta_k}}\]
+\end{definition}
+
+\begin{lemma}
+
+Let $a,b,c$ be three integers. Then
+\[a\mid c, b\mid c,\Rightarrow \lcm(a,b) \mid c
 \]
 
+\end{lemma}
+
+\begin{theorem}[Product of GCD and LCM]. 
+    Let $a$, $b$ be two integers. Then
+        $\gcd(a, b) \lcm(a, b) = ab.$
 \end{theorem}
 
-\begin{theorem}
+\begin{definition}
+    Two numbers $a$, $b$ are called coprime or relatively prime if $\gcd(a, b) = 1$.
+\end{definition}
+
+\begin{lemma}[Euclid's Lemma]
+    If $c \mid ab$ and $\gcd{c}{a}=1$, then $c \mid b$.
+\end{lemma}
+
+\begin{lemma}
+    Let $a$, $m$, $n$ be positive integers. Then,
+
+    \[\gcd{a^{m} - 1}{a^{n} - 1} = a^{\gcd{m}{n}} - 1.\]
+
+\end{lemma}
+
+
+\begin{lemma}
+    If $p$ is an odd prime, and $a, b$ are coprime, then
+
+    \[ \gcd{\frac{a^p+b^p}{a+b}}{a+b} \in \{1,p\}\]
+\end{lemma}
+
+\section{Euclid's Division Algorithm}
+
+\begin{lemma}
+    Let $a$, $b$ be integers. We can write $a = bq+r$ for integers $q$, $r$ where $0 \leq r < b$.
+Then the lemma states that
+\[gcd(a, b) = gcd(r, b).\]
+
+\end{lemma}
+
+\section{Bézouts' Theorem}
+
+\begin{theorem}[Bézouts' Theorem]
+Let $a$, $b$ be integers. Then the equation
+
+\[ax+by=n\]
+
+has a solution if and only if $\gcd{a}{b}$ divides $n$.
 \end{theorem}
 
-\begin{theorem}
+\section{Chicken Mc Nuggets}
+
+
+\begin{theorem}[Chicken Mc Nuggets Theorem/ Frobenius Coin Problem]
+Let $a$, $b$ be coprime integers. Then the largest number that can not be expressed on the form 
+
+\[am+bn, \ m,n \in \mathbb{Z}_{\geq 0}\]
+
+Is $(m-1)(n-1)-1$.
 \end{theorem}
+
 
 \section{Base Systems}
 \begin{definition}
@@ -49,6 +195,14 @@ Let $a,b,c$ be three integers. Then
     The base$-b$ representation of any real number is unique.
 \end{theorem}
 
-\section{Bézouts' Theorem}
+
+\section{Four Number Lemma}
+
+\begin{theorem}[Four number Lemma]
+Let $a$, $b$, $c$, and $d$ be positive integers such that $ab = cd$. Show that there exists positive
+integers $p$, $q$, $r$, $s$ such that
+\[a = pq, b = rs, c = ps, d = qr\]
+\end{theorem}
+
 
 

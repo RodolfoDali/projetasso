@@ -5,4 +5,96 @@
 \begin{theorem}
 \end{theorem}
 
+\begin{definition}
+    For integers $a$, $b$ and $n$, we write
+    \[a \equiv b \pmod n\]
+    if $n \mid a-b$
+\end{definition}
+
+\section{Residue classes}
+
+\begin{definition}
+    For a natural number $n$, and a non-negative number $r < n$. Then the
+\textbf{rth residue class} is the set of integers a that satisfy $a \equiv r \pmod n$. Equivalently, it is the
+set of all integers that leave $r$ as a remainder when divided by $n$.
+\end{definition}
+
+\begin{theorem}[Properties of Modulus]
+    Let $m$ be a positive integer, and $a$, $b$, $c$, $d$ be integers such that for a given integer $n$, $a \equiv b \pmod n, c \equiv d \pmod n$. Then 
+
+    \begin{itemize}
+       \item $a+c \equiv b+d \pmod n$ 
+       \item $ac \equiv bd \pmod n$
+       \item $a^m \equiv b^m \pmod n$
+    \end{itemize}
+
+\end{theorem}
+
+\begin{lemma}
+    Let $P$ be a polynomial with integer coefficients. Then
+    \[ P(a) \equiv P(b) \pmod {a-b}\]
+\end{lemma}
+
+\section{Equal Sets}
+
+\begin{theorem}[Two Equal Sets]
+    Let $n$ be an integer and consider $S$ be the set of integers less than $n$ and coprime to $n$. Let $a$ be any integer coprime to $n$. Then
+\[aS \equiv S \pmod n\].
+Here, $aS$ means the set obtained on multiplying each element of $S$ by $a$.
+\end{theorem}
+
+\section{Fermat's Little theorem}
+
+\begin{theorem}[Fermat's Little theorem]
+    Let $a$ be any number coprime to a prime $p$. Then
+    \[a^{p-1} \equiv 1 \pmod p. \]
+    Equivalently, for any $a$
+    \[a^p \equiv a \pmod p. \]
+\end{theorem}
+
+\section{Inverses}
+
+\begin{theorem}[Inverses]
+    Let $p$ be a prime and $a$ be an integer coprime to $p$. Then there exists an integer $x$ such that
+    \[xa \equiv 1 \pmod p\]
+    The integer $x$ is called the \textbf{inverse} of $a$ 
+\end{theorem}
+
+\section{Wilson's Theorem}
+
+\begin{theorem}[Wilson's Theorem]
+    For any integer $n$, Then
+        \[(n-1)! \equiv -1 \pmod n \ \iff \ n \ \text{is a prime.}\]
+\end{theorem}
+
 \section{Euler's Theorem}
+
+\begin{definition}
+    Let $n$ be a positive integer. The function $\varphi(n)$ is called Euler's totient function, and it denotes the number of positive integers less than $n$ that are coprime to it.
+\end{definition}
+
+\begin{theorem}[Euler's Totient Function]
+    Let $n=p_1^{\alpha_1}p_2^{\alpha_2}\dots p_k^{\alpha_k}$ be its prime factorization. Then
+    
+    \[
+    \varphi(n) = n \bigl( 1-\frac1{p_1} \bigr) \bigl( 1-\frac1{p_2} \bigr)\dots \bigl( 1-\frac1{p_k} \bigr)        
+    \]
+
+    Equivalently,
+
+    \[
+    \varphi(n)=n=p_1^{\alpha_1-1}p_2^{\alpha_2-1}\dots p_k^{\alpha_k-1}
+(p_1-1)(p_2-1)\dots(p_k-1)        
+    \]    
+\end{theorem}
+
+\begin{theorem}[$\varphi$ is multiplicative]
+    For any two \textbf{coprime} integers $m$, $n$, we have
+    \[\varphi(mn)=\varphi(m)\varphi(n)\]
+\end{theorem}
+
+\begin{theorem}[Euler's Theorem]
+    Let $n \geq 2$ be an integer and $a$ be any integer coprime to $n$. Then
+
+    \[ a^{\varphi(n)}\equiv 1 \pmod n\].    
+\end{theorem}

@@ -10,11 +10,22 @@
         \dfrac{a!}{b!(a-b)!}
     \end{cases}
     \]
+    
 \end{definition}
 
+\begin{lemma}
+    If $p$ is a prime, and $0<k<p$, then $p \mid \binom{p}{k}$
+\end{lemma}
 
-\begin{theorem}[Lucas Theorem]
-    
+\section{Lucas's Theorem}
+
+\begin{theorem}[Lucas's Theorem]
+    Let $p$ be a prime and $m, n$ non-negative with base-$p$ representations $m_k p^k+m_{k-1}p^{k-1}+\dots+m_1 p+m_0=m$, and $n_k p^k+n_{k-1}p^{k-1}+\dots+n_1 p+n_0=n$ respectively. Then,
+
+    \[
+    \binom{m}{n} \equiv \binom{m_k}{n_k}\binom{m_{k-1}}{n_{k-1}}\dots\binom{m_1}{n_1}\binom{m_0}{n_0} \pmod p
+    \]
+
 \end{theorem}
 
 
